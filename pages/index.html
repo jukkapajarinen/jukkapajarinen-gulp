@@ -11,7 +11,7 @@
     <script defer src="/build.js" type="text/javascript"></script>
   </head>
   <body class="vh-100">
-    <div class="container my-md-5 p-5 shadow-lg rounded border bg-light">
+    <div class="container my-md-5 p-md-5 shadow-lg rounded border bg-light">
       <nav class="navbar navbar-light">
         <div class="container-fluid">
           <h1 class="navbar-brand fs-1">Jukka Pajarinen</h1>
@@ -20,7 +20,14 @@
       </nav>
       <div class="container-fluid mt-3">
         <div class="row">
-          <aside class="col-md-3">
+          <aside class="col-md-3 order-last order-md-first">
+            <section class="d-none d-md-block mb-4 w-50">
+              <img
+                src="/images/jukkapajarinen.png"
+                alt="Photo"
+                class="img-fluid"
+              />
+            </section>
             <section>
               <h3>Yhteystiedot</h3>
               <ul class="list-unstyled">
@@ -31,7 +38,7 @@
                 <li><i class="fab fa-linkedin"></i> jukkapajarinen</li>
               </ul>
             </section>
-            <section>
+            <section class="d-none d-md-block">
               <h3>Taidot</h3>
               <ul class="list-unstyled">
                 <li>Go</li>
@@ -43,7 +50,7 @@
               </ul>
             </section>
           </aside>
-          <main class="col-md-9">
+          <main class="col-md-9 order-first order-md-last">
             <section>
               <h2>Ohjelmistokonsultti</h2>
               <p>

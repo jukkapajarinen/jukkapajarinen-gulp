@@ -40,5 +40,14 @@ html {
     padding: 0;
     min-height: 100vh;
     min-width: 100vw;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Amatic-Bold", sans-serif;
+    }
   }
 }
