@@ -6,7 +6,7 @@ $primary-hue: 215;
 /**************************************************/
 /* Sass and CSS library imports */
 /**************************************************/
-@import "../node_modules/@picocss/pico/scss/pico.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 /**************************************************/
@@ -25,16 +25,6 @@ $primary-hue: 215;
 @font-face {
   font-family: "Amatic-Bold";
   src: url("./fonts/Amatic-Bold.ttf") format("truetype");
-}
-
-/**********************************************************************/
-/* Layout customizations
-/**********************************************************************/
-@media (min-width: 992px) {
-  main .grid {
-    grid-column-gap: 2rem;
-    grid-template-columns: 25% auto;
-  }
 }
 
 /**********************************************************************/
