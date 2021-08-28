@@ -74,7 +74,7 @@ const pages = () => gulp.src("./pages/index.html").pipe(gulp.dest("./_build"));
 const static = gulp.parallel(fonts, icons, images, pages);
 const styles = () =>
   gulp
-    .src("./styles/**/*.*css")
+    .src(["./styles/**/main.scss", "./styles/**/*.css"])
     .pipe(gulpSass.sync().on("error", gulpSass.logError))
     .pipe(plugins.concat("build.css"))
     .pipe(plugins.cssimport())
