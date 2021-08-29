@@ -1,11 +1,12 @@
-# Gulp Static Website Starter 🥤
+# Gulp - jukkapajarinen🥤
 
-My personal starter template for static website development with `Gulp`.  
+My personal `Gulp` static website for developer information and portfolio.
 This starter template uses also `BrowserSync`, `Webpack`, `PostCSS` and `npm`.
 
 ## Usage
 
 Install node_modules (initial).
+
 ```
 npm install
 ```
@@ -33,3 +34,15 @@ gulp clean
 ```
 npx serve _build
 ```
+
+## Author
+
+- [Jukka Pajarinen](https://www.jukkapajarinen.com)
+
+## [License](LICENSE.md)
+
+Copyright (C) Jukka Pajarinen - All Rights Reserved
+
+Unauthorized copying of this project, via any medium is strictly prohibited proprietary and confidential
+
+Written by Jukka Pajarinen <jukka.pajarinen@lumitum.com>, Aug 2021
