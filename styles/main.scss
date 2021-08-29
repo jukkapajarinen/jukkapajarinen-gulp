@@ -50,16 +50,27 @@ html {
     h6 {
       font-family: "Montserrat-Bold", sans-serif;
       font-weight: 500;
+      margin-bottom: 1rem !important;
     }
 
     h1.navbar-brand {
       border-left: 0.25rem solid #1095c1;
       padding-left: 1.5rem;
+      margin-bottom: 0 !important;
     }
 
-    footer {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+    #paper {
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+
+    @media (min-width: 768px) {
+      #paper {
+        padding: 5rem !important;
+        margin-top: 5rem !important;
+        margin-bottom: 5rem !important;
+        border-radius: 0.5rem;
+      }
     }
   }
 }
