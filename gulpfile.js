@@ -70,7 +70,7 @@ const icons = () =>
     .pipe(gulp.dest("./_build/fonts"));
 const images = () =>
   gulp.src("./images/**/*").pipe(gulp.dest("./_build/images"));
-const pages = () => gulp.src("./pages/index.html").pipe(gulp.dest("./_build"));
+const pages = () => gulp.src("./pages/**/*.html").pipe(gulp.dest("./_build"));
 const static = gulp.parallel(fonts, icons, images, pages);
 const styles = () =>
   gulp

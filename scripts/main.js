@@ -1,11 +1,11 @@
 /**********************************************************************/
 /* Document ready handler
 /**********************************************************************/
-let onReady = () => {
-
-  // Toggle spinning of the icon
-  $("#main-icon").on("click", () => {
-    $(this).toggleClass("rotate");
+const onReady = () => {
+  $("#theme-toggler").on("click", (e) => {
+    e.preventDefault();
+    const currentTheme = $("html").attr("data-theme");
+    $("html").attr("data-theme", currentTheme === "dark" ? "light" : "dark");
   });
 };
 
