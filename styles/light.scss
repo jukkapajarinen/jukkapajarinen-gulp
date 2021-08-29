@@ -6,17 +6,17 @@
   @import "../node_modules/bootstrap/scss/_variables";
   @import "../node_modules/bootstrap/scss/_mixins";
 
-  $body-bg: #11191f;
-  $body-color: #bbc6ce;
-  $border-color: #374956;
-  $primary: #0eaaaa;
-  $secondary: #17232c;
+  $body-bg: #ffffff;
+  $body-color: #4b565d;
+  $border-color: #d2e2ec;
+  $primary: #1095c1;
+  $secondary: #e7e7e7;
   $success: #388e3c;
-  $info: #141e25;
+  $info: #f0f0f0;
   $warning: #d0c284;
   $danger: #c62828;
-  $light: #edf0f3;
-  $dark: #141e25;
+  $light: #f0f0f0;
+  $dark: #4b565d;
 
   $theme-colors: (
     "primary": $primary,
@@ -61,6 +61,7 @@
   $progress-bar-bg: $primary;
   $progress-bar-color: $body-color;
   $pagination-color: $body-color;
+  $badge-color: $body-color;
 
   @each $color, $value in $colors {
     --#{$variable-prefix}#{$color}: #{$value};

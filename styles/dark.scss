@@ -61,6 +61,7 @@
   $progress-bar-bg: $primary;
   $progress-bar-color: $body-color;
   $pagination-color: $body-color;
+  $badge-color: $body-color;
 
   @each $color, $value in $colors {
     --#{$variable-prefix}#{$color}: #{$value};
