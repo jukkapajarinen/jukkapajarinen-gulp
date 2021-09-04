@@ -1,38 +1,25 @@
-# Gulp - jukkapajarinen🥤
+# Gulp - jukkapajarinen 🥤
 
 My personal `Gulp` static website for developer information and portfolio.
-This starter template uses also `BrowserSync`, `Webpack`, `PostCSS` and `npm`.
 
-## Usage
+## How to use it?
 
-Install node_modules (initial).
+Install `node_modules`.
 
 ```
-npm install
+npm i
 ```
 
-Development mode with BrowserSync.
+Start development mode, which uses `BrowserSync`.
 
 ```
 gulp serve
 ```
 
-Build static site generated production build.
+(Optional) Finally build and test it locally.
 
 ```
-gulp build
-```
-
-Clean the build directory.
-
-```
-gulp clean
-```
-
-(Optional) Serve your build locally.
-
-```
-npx serve _build
+gulp build && npx serve _build
 ```
 
 ## Author
