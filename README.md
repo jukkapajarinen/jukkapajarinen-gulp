@@ -1,19 +1,16 @@
-# Gulp - jukkapajarinen 🥤
+# [jukkapajarinen.com](https://www.jukkapajarinen.com) 🥤
 
 My personal `Gulp` static website for developer information and portfolio.
 
-## How to use it?
+- Hosted in: [https://github.com/jukkapajarinen/jukkapajarinen.github.io](https://github.com/jukkapajarinen/jukkapajarinen.github.io)
+- Domain: [https://www.jukkapajarinen.com](https://www.jukkapajarinen.com)
 
-Install `node_modules`.
+## How to build it?
 
-```
-npm i
-```
-
-Start development mode, which uses `BrowserSync`.
+Install `node_modules` and start development mode, which uses `BrowserSync`.
 
 ```
-gulp serve
+npm i && gulp serve
 ```
 
 (Optional) Finally build and test it locally.
