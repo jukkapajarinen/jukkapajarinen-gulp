@@ -33,7 +33,7 @@ const postcssConfig = [
 const webpackConfig = {
   mode: "production",
   entry: { main: "./scripts/main.js" },
-  output: { path: path.resolve(__dirname, "./_build"), filename: "build.js" },
+  output: { path: path.resolve(__dirname, "./_build/js"), filename: "build.js" },
   plugins: [new webpack.ProvidePlugin({ $: "jquery", jQuery: "jquery" })],
   optimization: {
     minimize: true,
@@ -63,15 +63,11 @@ const webpackConfig = {
 /**********************************************************************/
 /* Gulp tasks for bundling css & js and copying static files
 /**********************************************************************/
-const fonts = () => gulp.src("./fonts/**/*").pipe(gulp.dest("./_build/fonts"));
-const icons = () =>
-  gulp
-    .src("./node_modules/@fortawesome/fontawesome-free/webfonts/*.ttf")
-    .pipe(gulp.dest("./_build/fonts"));
+const fonts = () => gulp.src("./fonts/**/*").pipe(gulp.dest("./_build/webfonts"));
 const images = () =>
   gulp.src("./images/**/*").pipe(gulp.dest("./_build/images"));
 const pages = () => gulp.src("./pages/**/*.html").pipe(gulp.dest("./_build"));
-const static = gulp.parallel(fonts, icons, images, pages);
+const static = gulp.parallel(fonts, images, pages);
 const styles = () =>
   gulp
     .src(["./styles/**/main.scss", "./styles/**/*.css"])
@@ -79,11 +75,10 @@ const styles = () =>
     .pipe(plugins.concat("build.css"))
     .pipe(plugins.cssimport())
     .pipe(plugins.postcss(postcssConfig))
-    .pipe(gulp.dest("./_build"));
+    .pipe(gulp.dest("./_build/css"));
 const scripts = (callback) => {
   webpack(webpackConfig, (err, stats) => {
     if (err) throw new gulpUtil.PluginError("webpack", err);
-    gulpUtil.log("[webpack]", stats.toString({ colors: true }));
     callback();
   });
 };

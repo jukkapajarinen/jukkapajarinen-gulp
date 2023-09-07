@@ -2,8 +2,7 @@
 /* Dependencies and base theme imports */
 /**************************************************/
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
-@import "./dark.scss";
-@import "./light.scss";
+@import "./custom.scss";
 
 /**************************************************/
 /* Fonts and resets */
@@ -11,20 +10,20 @@
 @font-face {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
-  src: url("./fonts/fa-brands-400.ttf") format("truetype");
+  src: url("../webfonts/fa-brands-400.ttf") format("truetype");
 }
 @font-face {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  src: url("./fonts/fa-solid-900.ttf") format("truetype");
+  src: url("../webfonts/fa-solid-900.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Montserrat-Bold";
-  src: url("./fonts/Montserrat-Bold.otf") format("truetype");
+  font-family: "JetBrainsMono-ExtraBold";
+  src: url("../webfonts/JetBrainsMono-ExtraBold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Titillium-Regular";
-  src: url("./fonts/Titillium-Regular.otf") format("truetype");
+  font-family: "JetBrainsMono-Regular";
+  src: url("../webfonts/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
 /**************************************************/
@@ -39,7 +38,7 @@ html {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    font-family: "Titillium-Regular", sans-serif;
+    font-family: "JetBrainsMono-Regular", sans-serif;
     font-weight: 400;
 
     h1,
@@ -48,13 +47,14 @@ html {
     h4,
     h5,
     h6 {
-      font-family: "Montserrat-Bold", sans-serif;
+      font-family: "JetBrainsMono-ExtraBold", sans-serif;
       font-weight: 600;
       margin-bottom: 1rem !important;
+      color: #bdff00 !important;
     }
 
     h1.navbar-brand {
-      border-left: 0.25rem solid #1095c1;
+      border-left: 0.25rem solid #bdff00;
       padding-left: 1.5rem;
       margin-bottom: 0 !important;
     }
@@ -62,6 +62,7 @@ html {
     #paper {
       padding-top: 2rem !important;
       padding-bottom: 2rem !important;
+      background: #181c2c !important;
     }
 
     @media (min-width: 768px) {
@@ -70,6 +71,25 @@ html {
         margin-top: 5rem !important;
         margin-bottom: 5rem !important;
         border-radius: 0.5rem;
+      }
+    }
+
+    @media print {
+      background: none !important;
+      color: #181c2c !important;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #18b6ff !important;
+      }
+
+      h1.navbar-brand {
+        border-color: #18b6ff !important;
+        color: #181c2c !important;
       }
     }
   }

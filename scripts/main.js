@@ -2,10 +2,9 @@
 /* Document ready handler
 /**********************************************************************/
 const onReady = () => {
-  $("#theme-toggler").on("click", (e) => {
+  $("#print-button").on("click", (e) => {
     e.preventDefault();
-    const currentTheme = $("html").attr("data-theme");
-    $("html").attr("data-theme", currentTheme === "dark" ? "light" : "dark");
+    window.print();
   });
 };
 
