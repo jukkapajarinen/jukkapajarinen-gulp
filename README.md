@@ -1,9 +1,6 @@
-# [jukkapajarinen.com](https://www.jukkapajarinen.com) 🥤
+# jukkapajarinen-gulp 🥤
 
 My personal `Gulp` static website for developer information and portfolio.
-
-- Hosted in: [https://github.com/jukkapajarinen/jukkapajarinen.github.io](https://github.com/jukkapajarinen/jukkapajarinen.github.io)
-- Domain: [https://www.jukkapajarinen.com](https://www.jukkapajarinen.com)
 
 ## How to build it?
 
